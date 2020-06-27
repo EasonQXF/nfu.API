@@ -90,6 +90,6 @@
 
 
 3. 产品结构图
-![产品结构图](https://gitee.com/EdisonQXF/API/raw/master/images/%E4%BA%A7%E5%93%81%E7%BB%93%E6%9E%84%E5%9B%BE.png)
+![产品结构图](https://gitee.com/EdisonQXF/API/raw/master/images/%E4%BA%A7%E5%93%81%E7%BB%93%E6%9E%84%E5%9B%BE%20(1).png)
 
 ## 七、数据推理
