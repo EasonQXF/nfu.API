@@ -157,9 +157,9 @@ print("图灵>>", res)
 #####  (四）产品的业务模式
 
 ### 所使用的API功能链接
-[高德地图API](https://lbs.amap.com/api/webservice/guide/api/direction)
-[图灵机器人](http://www.turingapi.com/scene)
-[Azure认知服务](https://azure.microsoft.com/zh-cn/services/cognitive-services/)
+- [高德地图API](https://lbs.amap.com/api/webservice/guide/api/direction)
+- [图灵机器人](http://www.turingapi.com/scene)
+- [Azure认知服务](https://azure.microsoft.com/zh-cn/services/cognitive-services/)
 
 #### 一句话版本
 现代人们生活的节奏越来越快，医疗资源仍然存在分配不均匀的情况，人们需要这样一款能够随时随地进行数据分析整理并评估病人身体状态，协助规划日常生活的智能健康管理App。通过人工智能技术的结合：智能机器人、路径规划等等，解决像基层工人、上班族这样的没时间或没经济能力的人群的健康需求。
