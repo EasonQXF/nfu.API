@@ -158,6 +158,14 @@ print("图灵>>", res)
 2. 高德地图API
 ![高德地图API](https://gitee.com/EdisonQXF/API/raw/master/images/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BEAPI%E6%8A%A5%E4%BB%B7.png)
 
+####可能还会用到的次重要API估价
+3. 文本分析
+- ![文本分析](https://gitee.com/EdisonQXF/API/raw/master/images/%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90%E6%8A%A5%E4%BB%B7%E8%A1%A8%E5%A4%B4.png)
+- ![文本分析](https://gitee.com/EdisonQXF/API/raw/master/images/%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90%E6%8A%A5%E4%BB%B7%E8%A1%A8.png)
+
+4. 语言理解
+- ![语言理解](https://gitee.com/EdisonQXF/API/raw/master/images/%E8%AF%AD%E8%A8%80%E7%90%86%E8%A7%A3%E6%8A%A5%E4%BB%B7%E8%A1%A8.png)
+
 ## 十一、API使用风险评估
 本产品需要收集用户的个人信息，例如身体状况、指标等，这些数据属于个人十分隐私的数据，然后再通过人工智能数据分析等操作。这些数据需要得到足够的安全保障。可以在建立数据库的时候加入区块链技术也可以通过加密用户数据，使用的时候需要得到用户的授权，比如输入用户个人身份证号、人脸识别等。
 
