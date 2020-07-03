@@ -49,7 +49,7 @@
 - 核心用户：男大学生
 
 2. 用户画像及使用场景
-- ![男大学生]()
+- ![男大学生](https://gitee.com/EdisonQXF/API/raw/master/images/%E8%BF%90%E5%8A%A8%E5%8C%BB%E7%94%9F%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F.png)
 - 使用场景：经常做体育运动，受到运动损伤了却不知道该怎么做。于是使用这款运动医生App，能够很方便的知道自己运动损伤的可能情况，并且知道具体怎么做的建议，比如需要热敷还是冰敷，做一些什么样的拉伸运动去缓解疼痛等等。
 
 ## 四、核心价值与用户痛点
@@ -82,15 +82,15 @@
 
 ## 七、产品结构图（图片可能比较大，加载不出来刷新即可）
 1. 产品功能结构图
-![产品功能结构图](https://gitee.com/EdisonQXF/API/raw/master/images/%E4%BA%A7%E5%93%81%E5%8A%9F%E8%83%BD%E7%BB%93%E6%9E%84%E5%9B%BE.png)
+![产品功能结构图](https://gitee.com/EdisonQXF/API/raw/master/images/%E8%BF%90%E5%8A%A8%E5%8C%BB%E7%94%9F-%E4%BA%A7%E5%93%81%E5%8A%9F%E8%83%BD%E7%BB%93%E6%9E%84%E5%9B%BE.png)
 
 
 2. 用户流程图
-![用户流程图](https://gitee.com/EdisonQXF/API/raw/master/images/%E7%94%A8%E6%88%B7%E6%B5%81%E7%A8%8B.png)
+![用户流程图](https://gitee.com/EdisonQXF/API/raw/master/images/%E8%BF%90%E5%8A%A8%E5%8C%BB%E7%94%9F-%E7%94%A8%E6%88%B7%E6%B5%81%E7%A8%8B.png)
 
 
 3. 产品结构图
-![产品结构图](https://gitee.com/EdisonQXF/API/raw/master/images/%E4%BA%A7%E5%93%81%E7%BB%93%E6%9E%84%E5%9B%BE%20(1).png)
+![产品结构图](https://gitee.com/EdisonQXF/API/raw/master/images/%E8%BF%90%E5%8A%A8%E5%8C%BB%E7%94%9F-%E4%BA%A7%E5%93%81%E7%BB%93%E6%9E%84%E5%9B%BE.png)
 
 ## 七、数据推理
 ||页面|
