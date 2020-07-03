@@ -109,7 +109,9 @@
 ## 九、API的运用（展示主要应用API）
 **需要通过注册登录得到API Key和Secret Key获取access_token**
 ###### （一）问答系统
-
+- 开源问答系统参考链接：
+- [开源软件>建站系统>开源问答系统 (31)](https://www.oschina.net/project/tag/299/qa)
+- [问答系统 - weiyinfu - 博客园](https://www.cnblogs.com/weiyinfu/p/10839297.html)
 
 ###### （二）图灵机器人
 ```python
@@ -154,7 +156,8 @@ print("图灵>>", res)
 需要注册账号，可以申请5个机器人，未认证账户每个机器人只能回3条/天，认证账户每个机器人能用100条/天。
 
 2. 自然语言处理-问答系统
-![问答系统](https://gitee.com/EdisonQXF/API/raw/master/images/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BEAPI%E6%8A%A5%E4%BB%B7.png)
+[基于知识图谱的问答系统](https://blog.csdn.net/weixin_44023339/article/details/99965656)
+[Github项目地址](https://github.com/liuhuanyong/QASystemOnMedicalKG)
 
 ####可能还会用到的次重要API估价
 3. 文本分析
