@@ -120,7 +120,7 @@
 - 首页界面
 ![首页界面](https://gitee.com/EdisonQXF/API/raw/master/images/%E9%A6%96%E9%A1%B5.png)
 2. 核心页面——图灵机器人解答界面
-
+- 用户可以直接对着手机麦克风说话输入内容，也可以点击对话框手动输入。
 ![图灵机器人解答界面](https://gitee.com/EdisonQXF/API/raw/master/images/%E5%9B%BE%E7%81%B5%E6%9C%BA%E5%99%A8%E4%BA%BA.png)
 
 3. 主要页面——问答社区
