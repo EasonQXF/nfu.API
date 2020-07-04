@@ -105,6 +105,27 @@
 |回答4|通过用户的反馈功能进行信息获取，通过用户的自愿反馈扩大数据库，强化机器学习，不断扩大数据库进而降低失败率|
 
 ## 八、产品原型及交互设计
+##### [原型文档下载区](https://github.com/EasonQXF/nfu.API/tree/master/%E8%BF%90%E5%8A%A8%E5%8C%BB%E7%94%9F%E5%8E%9F%E5%9E%8B%E4%BA%A4%E4%BA%92%E7%95%8C%E9%9D%A2)
+##### [原型文档交互展示](https://i2zbnz.axshare.com)
+##### [原型文档rp文件下载区](https://github.com/EasonQXF/nfu.API/blob/master/%E8%BF%90%E5%8A%A8%E5%8C%BB%E7%94%9F.rp)
+
+1. 启动、注册、登录、首页界面
+
+- 启动界面
+![启动界面](https://gitee.com/EdisonQXF/API/raw/master/images/%E5%90%AF%E5%8A%A8%E7%95%8C%E9%9D%A2.jpg)
+- 注册界面
+![注册界面](https://gitee.com/EdisonQXF/API/raw/master/images/%E6%B3%A8%E5%86%8C.png)
+- 登录界面
+![登陆界面](https://gitee.com/EdisonQXF/API/blob/master/images/%E7%99%BB%E5%BD%95.png)
+- 首页界面
+![首页界面](https://gitee.com/EdisonQXF/API/raw/master/images/%E9%A6%96%E9%A1%B5.png)
+2. 核心页面——图灵机器人解答界面
+
+![图灵机器人解答界面](https://gitee.com/EdisonQXF/API/raw/master/images/%E5%9B%BE%E7%81%B5%E6%9C%BA%E5%99%A8%E4%BA%BA.png)
+
+3. 主要页面——问答社区
+
+![问答社区](https://gitee.com/EdisonQXF/API/raw/master/images/%E9%97%AE%E7%AD%94%E7%A4%BE%E5%8C%BA.png)
 
 ## 九、API的运用（展示主要应用API）
 **需要通过注册登录得到API Key和Secret Key获取access_token**
