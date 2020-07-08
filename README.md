@@ -246,8 +246,13 @@ print("图灵>>", res)
 4. 增加付费的高端项目
 > 我们还可以为高端人群客户定制化服务，在保障普通用户的正常使用功能外，再开发更高端的服务，吸引特定的人群进行升级服务，消费升级。
 
-#####  (四）产品的业务模式
-![业务模式]()
+#####  (四）产品的业务流程
+![业务流程图](https://gitee.com/EdisonQXF/API/raw/master/images/%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+
+## IDEO三要素（Viability 商业可行性、 Feasibility 技术可行性、及 Desirability 用户可欲性）
+- **这里对上述的IDEO三要素做一个简单的总结**
+
+![IDEO三要素](https://gitee.com/EdisonQXF/API/raw/master/images/IDEO.png)
 
 ### 所使用的API功能链接
 - [自然语言处理](https://lbs.amap.com/api/webservice/guide/api/direction)
@@ -280,3 +285,6 @@ print("图灵>>", res)
 - [问答系统api文档](https://blog.csdn.net/weixin_33728268/article/details/92533258)
 - [自己动手实现4大免费聊天机器人：小冰、图灵、腾讯、青云客](https://zhuanlan.zhihu.com/p/110785806)
 - [https://github.com/zoulala/youmi](https://github.com/zoulala/youmi)
+参考文档：
+- 《国外健康类ＡＰＰ评价研究综述》-仝晶晶、邓胜利（武汉大学信息资源研究中心，武汉，４３００７２）
+- 《健康管理类应用软件国内外现状与前景分析》 张子豪、章红英-首都医科大学基础医学院，北京-100069；首都医科大学中医药学院，北京-100069 
