@@ -4,7 +4,7 @@
 |--|--|
 |产品名称|Sport-doctor(运动医生)|
 |产品描述|一款通过收集男大学生运动损伤的信息，运用人工智能技术(图灵机器人服务、自然语言处理)进行数据分析整理，主要利用自然语言处理中的问答系统，解决男大学生运动损伤处理需求的App|
-|产品版本|2.0|
+|产品版本|1.0|
 |文件现状|进行中|
 |文件作者|丘小峰|
 
@@ -104,6 +104,9 @@
 |问题4|如果分析病情的过程中出现明显的识别错误，应该如何获取并处理这些数据数据|
 |回答4|通过用户的反馈功能进行信息获取，通过用户的自愿反馈扩大数据库，强化机器学习，不断扩大数据库进而降低失败率|
 
+#### 数据流程图展示
+![数据流程图](https://gitee.com/EdisonQXF/API/raw/master/images/%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+
 ## 八、产品原型及交互设计
 ##### [原型文档下载区](https://github.com/EasonQXF/nfu.API/tree/master/%E8%BF%90%E5%8A%A8%E5%8C%BB%E7%94%9F%E5%8E%9F%E5%9E%8B%E4%BA%A4%E4%BA%92%E7%95%8C%E9%9D%A2)
 ##### [原型文档交互展示](https://i2zbnz.axshare.com)
@@ -119,6 +122,7 @@
 ![登陆界面](https://gitee.com/EdisonQXF/API/blob/master/images/%E7%99%BB%E5%BD%95.png)
 - 首页界面
 ![首页界面](https://gitee.com/EdisonQXF/API/raw/master/images/%E9%A6%96%E9%A1%B5.png)
+
 2. 核心页面——图灵机器人解答界面
 - 用户可以直接对着手机麦克风说话输入内容，也可以点击对话框手动输入。
 ![图灵机器人解答界面](https://gitee.com/EdisonQXF/API/raw/master/images/%E5%9B%BE%E7%81%B5%E6%9C%BA%E5%99%A8%E4%BA%BA.png)
@@ -128,7 +132,9 @@
 ![问答社区](https://gitee.com/EdisonQXF/API/raw/master/images/%E9%97%AE%E7%AD%94%E7%A4%BE%E5%8C%BA.png)
 
 ## 九、API的运用（展示主要应用API）
+
 **需要通过注册登录得到API Key和Secret Key获取access_token**
+
 ###### （一）问答系统
 - 开源问答系统参考链接：
 - [开源软件>建站系统>开源问答系统 (31)](https://www.oschina.net/project/tag/299/qa)
