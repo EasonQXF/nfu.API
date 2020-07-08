@@ -119,7 +119,7 @@
    具体体验可以点击上方[原型文档交互展示](https://i2zbnz.axshare.com)链接进行产品原型体验。
 
 - 启动界面
-![启动界面](https://gitee.com/EdisonQXF/API/raw/master/images/%E5%90%AF%E5%8A%A8%E7%95%8C%E9%9D%A2.jpg)
+![启动界面](https://gitee.com/EdisonQXF/API/raw/master/images/%E5%90%AF%E5%8A%A8%E7%95%8C%E9%9D%A2.png)
 - 注册界面
 ![注册界面](https://gitee.com/EdisonQXF/API/raw/master/images/%E6%B3%A8%E5%86%8C.png)
 - 登录界面
