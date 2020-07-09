@@ -151,11 +151,11 @@
 通过图灵机器人下方代码实践成功建立简单的智能问答：
 ![wendaxitong](https://gitee.com/EdisonQXF/API/raw/master/images/turing_demo.png)
 
-###### （二）图灵机器人
+###### （二）图灵机器人([附原文件下载地址](https://github.com/EasonQXF/nfu.API))
 
 ![tuling](https://gitee.com/EdisonQXF/API/raw/master/images/tuling.png)
 
-py文件：
+py文件（[Turing_dome.py下载地址](https://github.com/EasonQXF/nfu.API/blob/master/Turing_dome.py)）：
 ```python
 #!/usr/bin/env python
 # coding: utf-8
@@ -228,7 +228,7 @@ if __name__ == '__main__':
     td.talkToTheTuring()
 ```
 
-json文件：
+json文件（[req.json文件下载地址](https://github.com/EasonQXF/nfu.API/blob/master/req.json)）：
 ```python
 {
     "perception":
