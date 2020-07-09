@@ -145,37 +145,178 @@
 - 开源问答系统参考链接：
 - [开源软件>建站系统>开源问答系统 (31)](https://www.oschina.net/project/tag/299/qa)
 - [问答系统 - weiyinfu - 博客园](https://www.cnblogs.com/weiyinfu/p/10839297.html)
+- [手把手教你用Python搭建一个AI智能问答系统](https://blog.csdn.net/zw0Pi8G5C1x/article/details/103077499)
+- [Python实现简单的智能回答](https://blog.csdn.net/HuangZhang_123/article/details/80734287)
+
+通过图灵机器人下方代码实践成功建立简单的智能问答：
+![wendaxitong](https://gitee.com/EdisonQXF/API/raw/master/images/turing_demo.png)
 
 ###### （二）图灵机器人
+
+![tuling](https://gitee.com/EdisonQXF/API/raw/master/images/tuling.png)
+
+py文件：
 ```python
-def tuling(msg):
-    api_key = "******"
-    url = 'http://openapi.tuling123.com/openapi/api/v2'
-    data = {
-        "perception": {
-            "inputText": {
-                "text": msg
-            },
-        },
-        "userInfo": {
-            "apiKey": api_key,
-            "userId": "1"
-        }
-    }
-    datas = json.dumps(data)
-    html = requests.post(url, datas).json()
-    if html['intent']['code'] == 4003:
-        print("次数用完")
-        return None
-    return html['results'][0]['values']['text']
-msg = '我今天肚子疼'
-print("原话>>", msg)
-res = tuling(msg)
-print("图灵>>", res)
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
+
+#coding=utf-8
+
+import json
+import urllib.request
+
+api_url = "http://openapi.tuling123.com/openapi/api/v2"
+json_path = 'req.json'
+
+class TuringDome(object):
+    def __init__(self,json_path="",api_url=""):
+        self.json_path = json_path
+        self.api_url = api_url
+        self.text_input = input('请输入我的问话\n我：')
+
+    def readJson(self):
+        '''获取json文件'''
+        with open(self.json_path,'r',encoding='utf-8') as f_json:
+            json_data = json.load(f_json)
+        return json_data
+
+    def textInput(self):
+        '''用变量text_input替换text的value值'''
+        req = self.readJson()
+        req['perception']['inputText']['text'] = self.text_input
+        return req
+
+    def dumpsJson(self):
+        '''将json字符串转化成dict格式'''
+        req = self.textInput()
+        req = json.dumps(req,sort_keys=True,indent=4,).encode('utf8')
+        return req
+
+    def urllibRequestResponse(self):
+        req = self.dumpsJson()
+        http_post = urllib.request.Request(self.api_url, data=req, headers={'content-type': 'application/json'})
+        response = urllib.request.urlopen(http_post)# 在urlopen()方法中传入字符串格式的url地址，则此方法会访问目标网址，然后返回访问的结果。
+        response_str = response.read().decode('utf8')
+        response_dict = json.loads(response_str) # 将字符串response_str转成字典
+        return response_dict
+
+    def getTuringResponse(self):
+        '''取得机器人返回的语句并输出'''
+        response_dict = self.urllibRequestResponse()
+        intent_code = response_dict.get('intent')['code']
+        results_text = response_dict.get('results')[0]['values']['text']
+        print('Turing的回答：')
+        print('code：' + str(intent_code))
+        print('text：' + results_text)
+
+    def talkToTheTuring(self):
+        #self.text_input = input('请输入我的问话\n我：')
+        while True:
+            if self.text_input != "exit:":
+                self.getTuringResponse()
+                self.text_input = input('请输入我的问话\n我：')
+            else:
+                print("*****结束对话！*****")
+                break
+
+if __name__ == '__main__':
+    #pass
+    td = TuringDome(json_path=json_path,api_url=api_url)
+    td.talkToTheTuring()
 ```
+
+json文件：
+```python
+{
+    "perception":
+    {
+        "inputText":
+        {
+            "text": ""
+        },
+
+        "selfInfo":
+        {
+            "location":
+            {
+                "city": "北京",
+                "province": "北京",
+                "street": "天安门"
+            }
+        }
+    },
+
+    "userInfo":
+    {
+        "apiKey": "你的APIkey",
+        "userId": "Qiu"
+    }
+}
+
+```
+
+###### （三）自然语言处理-情感倾向分析
+```python
+import requests 
+import pandas as pd
+import json
+host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=lOCpbOwkLDZEAsEvBC6AEbwq&client_secret=meXIqsu0WduxzC9fWvlSYzqTtngC604G'
+response = requests.get(host)
+if response:
+    print(response.json())
+import ast
+
+API_KEY = '123456'
+SECRET_KEY = '123456'
+
+response = requests.get(
+    url='https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id={}&client_secret={}'.format(
+        API_KEY, SECRET_KEY
+    ), headers={'Content-Type': 'application/json; charset=UTF-8'})
+
+r = requests.post(
+    url='https://aip.baidubce.com/rpc/2.0/nlp/v1/sentiment_classify?charset=UTF-8&access_token={}'.format(
+        ast.literal_eval(response.text)['access_token']),
+    headers={'Content-Type': 'application/json'},
+    data='{"text":"我今天摔倒腿了"}'.encode('utf8')
+)
+print(r.text) 
+```
+
 输出：
-原话>> 我今天肚子疼
-图灵>> 
+
+```python
+{"log_id": 3428156748190015625, "text": "我今天摔倒腿了", "items": [{"positive_prob": 0.908278, "confidence": 0.796174, "negative_prob": 0.0917218, "sentiment": 2}]}
+```
+
+###### （四）自然语言处理-词法分析
+```python
+def baidu_lexer(text):
+    url = "https://aip.baidubce.com/rpc/2.0/nlp/v1/lexer?access_token="+access_token
+    data = {
+        "text" : text   
+    }
+    encode_data=json.dumps(data).encode('UTF-8')
+    headers = {
+        'Content-Type':'application/json'
+    }
+    return requests.post(url,encode_data).content
+content_lexer = baidu_lexer("我爱中国")
+content_lexer_str = str(content_lexer ,encoding="GBK")
+content_lexer_str_dict =json.loads(content_lexer_str)
+pd.json_normalize(content_lexer_str_dict).T
+```
+
+输出：
+
+```python
+log_id	4830720686789984105
+text	我爱中国
+items	[{'loc_details': [], 'byte_offset': 0, 'uri': ...
+```
 
 **图灵机器人API和青云客智能聊天机器人API的比较**
 |      | 图灵机器人API                                                                                                                                                        | 青云客智能聊天机器人API                                                                                            |
@@ -293,6 +434,8 @@ print("图灵>>", res)
 - [基于知识图谱的问答系统1](https://blog.csdn.net/weixin_44023339/article/details/99965656)
 - [问答系统api文档](https://blog.csdn.net/weixin_33728268/article/details/92533258)
 - [自己动手实现4大免费聊天机器人：小冰、图灵、腾讯、青云客](https://zhuanlan.zhihu.com/p/110785806)
+- [手把手教你用Python搭建一个AI智能问答系统](https://blog.csdn.net/zw0Pi8G5C1x/article/details/103077499)
+- [Python实现简单的智能回答](https://blog.csdn.net/HuangZhang_123/article/details/80734287)
 - [https://github.com/zoulala/youmi](https://github.com/zoulala/youmi)
 
 参考文档：
